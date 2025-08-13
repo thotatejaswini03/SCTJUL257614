@@ -1,4 +1,4 @@
-// Simple smooth nav active link highlight on scroll
+
 
 const sections = document.querySelectorAll('main section');
 const navLinks = document.querySelectorAll('.nav-item');
@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Hamburger menu toggle (for mobile)
+
 
 const hamburger = document.getElementById('hamburger');
 const navLinksContainer = document.getElementById('nav-links');
@@ -38,7 +38,7 @@ hamburger.addEventListener('keydown', e => {
   }
 });
 
-// Contact form submission handling
+
 
 const form = document.getElementById('contact-form');
 const messageDiv = document.getElementById('form-message');
@@ -51,8 +51,6 @@ form.addEventListener('submit', (e) => {
     return;
   }
 
-  // In real scenario, send data to backend here
-  // For demo, just show thank you message
   form.reset();
   messageDiv.hidden = false;
 
@@ -60,3 +58,4 @@ form.addEventListener('submit', (e) => {
     messageDiv.hidden = true;
   }, 5000);
 });
+
