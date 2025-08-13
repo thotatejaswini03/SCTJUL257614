@@ -30,7 +30,6 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
 });
 
-// Accessibility: keyboard toggle hamburger
 hamburger.addEventListener('keydown', e => {
   if(e.key === 'Enter' || e.key === ' ') {
     e.preventDefault();
@@ -58,4 +57,5 @@ form.addEventListener('submit', (e) => {
     messageDiv.hidden = true;
   }, 5000);
 });
+
 
